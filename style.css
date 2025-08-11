@@ -16,7 +16,7 @@
 
 .icon-white {
   color: white;
-  font-size: 32px;
+    font-size: clamp(1rem, 32vmin, 32px);
 
 }
 
@@ -24,8 +24,7 @@ span{
     font-family: 'Source Code Pro', monospace;
     color: white;
     font-weight: bold;
-    font-size: 50px;
-    
+    font-size: clamp(1rem, 50vmin, 50px);
     
 }
 
@@ -61,13 +60,13 @@ body{
     font-family: 'Source Code Pro', monospace;
     color: white;
     font-weight: bold;
-    font-size: 50px;
+    font-size: clamp(1rem, 50vmin, 50px);
 }
 
 .normalText{
     font-family: 'Source Code Pro', monospace;
     color: white;
-    font-size: 20px;
+    font-size: clamp(1rem, 20vmin, 20px);
 }
 
 
@@ -128,7 +127,7 @@ body{
     .header {
         position: relative;
         overflow: hidden;
-        background-color: #f1f1f1;
+        background-color: #28282b;
         padding: 20px 10px;
     }
 }
