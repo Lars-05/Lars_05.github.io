@@ -317,6 +317,13 @@ body {
     border-color: transparent transparent transparent #1e1e1e;
 }
 
+.timeline-item.left .content {
+    margin-left: 20px;
+}
+
+.timeline-item.right .content {
+    margin-right: 20px; 
+
 .timeline-item.right .content::after {
     content: '';
     position: absolute;
