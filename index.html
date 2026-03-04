@@ -1,113 +1,222 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>Lars Versteegen | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/669a4d5e10.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-<title>Page Title</title>
-    <link rel = "stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<div class="header">
-    <!--
-    <a href="index.html" class="logo">Lars Versteegen</a>
-    -->
-    <div class="header-right">
-        <a class="active" href="index.html">Home</a>
-    </div>
-</div>
 <body>
 
-<div class="infoBox">
+<header class="header">
+    <div class="logo">Lars Versteegen</div>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="profile">
     <img class="profile-picture"
          src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/ProfilePicture.png"
-         width="300" height="300">
-    
-    
-    <div class="textBox">
-        <h1 class="headerText"> Lars Versteegen </h1>
-        <br>
-        <h1 class="normalText">
-            Second-Year Game & Graphics Engineer and 3D Artist student at 
-            Creative Media and Game Technologies (CMGT),
-            Saxion University of Applied Sciences
-        </h1>
+         alt="Profile Picture">
+
+    <h1>Lars Versteegen</h1>
+    <p>
+        Second-Year Game & Graphics Engineer and 3D Artist student at
+        Creative Media and Game Technologies (CMGT),
+        Saxion University of Applied Sciences.
+    </p>
+</section>
+
+<!-- Project Cards -->a
+<section class="projects">
+    <a href="CitySlicker.html" class="project-card">
+        <video class="card-video" muted playsinline loop>
+            <source src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/CitySlickerVideo.mp4" type="video/mp4">
+        </video>
+        <div class="card-content">
+            <h3>City Slicker</h3>
+            <p>5 Weeks · Solo · C# · Unity</p>
+        </div>
+    </a>
+
+    <a href="DungeonGenerator.html" class="project-card">
+        <video class="card-video" muted playsinline loop>
+            <source src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/ShaderProgrammingShowOff.mp4" type="video/mp4">
+        </video>
+        <div class="card-content">
+            <h3>Dungeon Generator</h3>
+            <p>5 Weeks · Solo · C# · Unity</p>
+        </div>
+    </a>
+
+    <a href="ShaderProgramming.html" class="project-card">
+        <video class="card-video" muted playsinline loop>
+            <source src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/ShaderProgrammingShowOff.mp4" type="video/mp4">
+        </video>
+        <div class="card-content">
+            <h3>Shader Programming</h3>
+            <p>7 Weeks · Solo · C# & HLSL · Unity</p>
+        </div>
+    </a>
+</section>
+
+<!-- Skills Section -->
+<section class="skills">
+    <h2>My Skills</h2>
+
+    <div class="skill-legend">
+        <span><strong>Beginner</strong>: Just started learning</span>
+        <span><strong>Moderate</strong>: Basic projects completed</span>
+        <span><strong>Experienced</strong>: Confident, can build real projects</span>
+        <span><strong>Expert</strong>: Professional-level, fully proficient</span>
     </div>
-</div>
 
-<div class="infoBox">
-    <div class="textBox">
-        <h1 class="headerText">About Me </h1>
-        <br>
-        <h1 class="normalText">
-            Hi! I’m Lars, a passionate aspiring game developer from the Netherlands. I’m currently studying Creative Media and Game Technologies (CMGT) at Saxion University of Applied Sciences, where I major in Game & Graphics Engineering and minor in 3D Art
-        </h1>
-    </div>
-</div>
-
-
-
-<div class="infoBox-row-container">
-    <div class="infoBox">
-        <div class="textBox">
-            <h1 class="headerText"> <a href="CitySlicker.html">City Slicker</a> </h1>
-            <br><br>
-            <i class="fa-solid fa-clock icon-white"></i> &nbsp;<span class="icon-white"> 5 Weeks </span>
-            <br><br>
-            <i class="fa-solid fa-users icon-white"></i> &nbsp;<span class="icon-white"> 1 </span>
-            <br><br>
-            <i class="fa-solid fa-code icon-white"></i> &nbsp;<span class="icon-white">  C# </span>
-            <br><br>
-            <i class="fa-solid fa-gears icon-white"></i> &nbsp;<span class="icon-white"> Unity </span>
+    <h3 class="skill-category">Programming</h3>
+    <div class="skills-grid">
+        <div class="skill">
+            <span>C#</span>
+            <div class="skill-bar">
+                <div class="skill-progress level-experienced"><span class="progress-label">Experienced</span></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>C++</span>
+            <div class="skill-bar">
+                <div class="skill-progress level-moderate"><span class="progress-label">Moderate</span></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>HLSL / GLSL / ShaderGraph</span>
+            <div class="skill-bar">
+                <div class="skill-progress level-moderate"><span class="progress-label">Moderate</span></div>
+            </div>
         </div>
     </div>
 
-    <div class="infoBox">
-        <div class="textBox">
-            <h1 class="headerText"> <a href="DungeonGenerator.html">Dungeon Generator</a> </h1>
-            <br><br>
-            <i class="fa-solid fa-clock icon-white"></i> &nbsp;<span class="icon-white"> 5 Weeks </span>
-            <br><br>
-            <i class="fa-solid fa-users icon-white"></i> &nbsp;<span class="icon-white"> 1 </span>
-            <br><br>
-            <i class="fa-solid fa-code icon-white"></i> &nbsp;<span class="icon-white">  C# </span>
-            <br><br>
-            <i class="fa-solid fa-gears icon-white"></i> &nbsp;<span class="icon-white"> Unity </span>
-        </div>
-    </div>>
-    
-    <div class="infoBox">
-        <div class="textBox">
-            <h1 class="headerText"> <a href="ShaderProgramming.html">Shader Programming</a> </h1>
-            <br><br>
-            <i class="fa-solid fa-clock icon-white"></i> &nbsp;<span class="icon-white"> 7 Weeks </span>
-            <br><br>
-            <i class="fa-solid fa-users icon-white"></i> &nbsp;<span class="icon-white"> 1 </span>
-            <br><br>
-            <i class="fa-solid fa-code icon-white"></i> &nbsp;<span class="icon-white">  C# & HLSL </span>
-            <br><br>
-            <i class="fa-solid fa-gears icon-white"></i> &nbsp;<span class="icon-white"> Unity </span>
+    <h3 class="skill-category">Engines</h3>
+    <div class="skills-grid">
+        <div class="skill">
+            <span>Unity</span>
+            <div class="skill-bar">
+                <div class="skill-progress level-experienced"><span class="progress-label">Experienced</span></div>
+            </div>
         </div>
     </div>
-</div>
+
+    <h3 class="skill-category">Art & 3D Modeling</h3>
+    <div class="skills-grid">
+        <div class="skill">
+            <span>Maya</span>
+            <div class="skill-bar">
+                <div class="skill-progress level-moderate"><span class="progress-label">Moderate</span></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Substance Designer</span>
+            <div class="skill-bar">
+                <div class="skill-progress level-moderate"><span class="progress-label">Moderate</span></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Krita</span>
+            <div class="skill-bar">
+                <div class="skill-progress level-experienced"><span class="progress-label">Experienced</span></div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="skill-category">Packages</h3>
+    <div class="skills-grid">
+        <div class="skill">
+            <span>OpenGL</span>
+            <div class="skill-bar">
+                <div class="skill-progress level-beginner"><span class="progress-label">Beginner</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="timeline">
+    <h2>My Timeline</h2>
+    <div class="timeline-container">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item left"> 
+            <div class="content">
+                <h3>2017 - 2018</h3><br> <br>
+                <p>Career path chosen! I want to make video games!</p>
+            </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item right">
+            <div class="content">
+                <h3>2018 - 2021</h3><br> <br>
+                <p>Started out with roblox studio, Opened 3D model commissions and earned small robux fees for making 3D models</p>
+            </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item left">
+            <div class="content">
+                <h3>2021 - 2022</h3><br> <br>
+                <p>Got inspired by Subnautica and switched to Unity, started coding small things like player controllers in C#</p>
+            </div>
+        </div>
+
+        <!-- Timeline Item 4 -->
+        <div class="timeline-item right">
+            <div class="content">
+                <h3>2022 - 2023</h3><br> <br>
+                <p>Introducted To HTML, CSS, JavaScript and PHP during Computer Science</p>
+            </div>
+        </div>
+
+        <!-- Timeline Item 5 -->
+        <div class="timeline-item Left">
+            <div class="content">
+                <h3>2023 - 2024</h3><br> <br>
+                <p>Finished Computer Science and Applied to CMGT with my first released and polished games</p>
+                <div class="image-container" style="text-align:center; margin: 40px 0;">
+                    <img src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/PolutionSolution.png" style="max-width:300px; border-radius:12px;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline Item 6 -->
+        <div class="timeline-item right">
+            <div class="content">
+                <h3>2024 - currently </h3><br> <br>
+                <p>Second Year Engineer and 3D Artist looking for an internship</p>
+           
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JS for hover video -->
+<script>
+    document.querySelectorAll('.project-card').forEach(card => {
+        const video = card.querySelector('video');
+        if(!video) return;
+
+        card.addEventListener('mouseenter', () => {
+            video.play().catch(err => console.log(err));
+        });
+
+        card.addEventListener('mouseleave', () => {
+            video.pause();
+            video.currentTime = 0;
+        });
+    });
+</script>
 
 
-
-
-
-
-<div class="infoBox-row-container">
-    
-</div>
-
-
-
-
-
-        
-    
 
 </body>
-
-
-</html> 
+</html>
