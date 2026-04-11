@@ -1,86 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>City Slicker | Lars Versteegen</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/669a4d5e10.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-<title>Page Title</title>
-    <link rel = "stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<div class="header">
-    <!--
-    <a href="index.html" class="logo">Lars Versteegen</a>
-    -->
-    <div class="header-right">
+
+
+<body class="project-page">
+
+
+<header class="header">
+
+    <div class="logo">Lars Versteegen</div>
+
+    <nav>
         <a href="index.html">Home</a>
+    </nav>
+
+</header>
+
+
+<a href="index.html" class="back-button">
+    <i class="fa-solid fa-arrow-left"></i>
+</a>
+
+
+<section class="project-hero">
+
+    <video autoplay muted loop playsinline>
+        <source src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/CitySlickerVideo.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay">
+
+        <h1>City Slicker</h1>
+
+        <p class="tagline">
+            Fast-paced movement FPS focused on speed and flow
+        </p>
+
+        <div class="project-meta">
+
+            <span><i class="fa-solid fa-clock"></i> 5 Weeks</span>
+            <span><i class="fa-solid fa-user"></i> Solo</span>
+            <span><i class="fa-solid fa-code"></i> C#</span>
+            <span><i class="fa-solid fa-gears"></i> Unity</span>
+
+        </div>
+
     </div>
-</div>
-<body>
 
-
-<video autoplay loop muted playsinline width="100%">
-    <source src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/ShaderProgrammingShowOff.mp4" type="video/mp4">
-</video>
+</section>
 
 
 
+<section class="project-section">
 
-<div class="infoBox-left">
-    <div class="textBox">
-        <h1 class="headerText"> Shader Programming </h1>
-        <br><br>
-        <i class="fa-solid fa-clock icon-white"></i> &nbsp;<span class="icon-white"> 7 Weeks </span> 
-        <br><br>
-        <i class="fa-solid fa-users icon-white"></i> &nbsp;<span class="icon-white"> 1 </span>
-        <br><br>
-        <i class="fa-solid fa-code icon-white"></i> &nbsp;<span class="icon-white"> C# & HLSL </span>
-        <br><br>
-        <i class="fa-solid fa-gears icon-white"></i> &nbsp;<span class="icon-white"> Unity </span>
-    </div>
-</div>
+    <h2>Game Overview</h2>
 
+    <p>
+        City Slicker is a fast-paced movement-based first-person shooter
+        developed completely solo in Unity using C#. The game was created
+        over five weeks with the goal of experimenting with responsive
+        high-speed traversal mechanics.
+    </p>
 
-<div class="infoBox">
-    <div class="textBox">
-        <h1 class="headerText"> Project Overview </h1>
-        <br>
-        <h1 class="normalText">
-            In this project, I scripted multiple shaders using HLSL and ShaderGraph. These ranged from more pretty shaders such as dissolve, hologram, and intersection shaders, to more technical shaders like custom lighting calculations with live normal calculation.
+    <p>
+        All gameplay systems, mechanics and assets were created from
+        scratch without external libraries or packages.
+    </p>
 
-            I also created a procedural tree generator, which builds the tree meshes and UVs algorithmically based on several parameters.
-        </h1>
-    </div>
-</div>
-
-
-<video autoplay loop muted playsinline width="100%">
-    <source src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/TreeGeneration.mp4" type="video/mp4">
-</video>
+</section>
 
 
 
+<section class="project-section alt">
 
-<div class="infoBox">
-    <div class="textBox">
-        <h1 class="headerText"> What Did I learn? </h1>
-        <br>
-        <h1 class="normalText">
-            • Manipulation of 2D textures and color data using C#, HLSL, and ShaderGraph.<br><br>
-            • Applying dot and cross products for tasks like basic lighting, calculating mesh normals and UV mapping.<br><br>
-            • Understanding 3D meshes, including geometry, normals, and UV generation.<br><br>
-            • Scripting vertex and fragment shaders with Unity URP, HLSL, and ShaderGraph.<br><br>
-            • Knowledge of coordinate spaces and transforming between them using matrices and vector bases.<br><br>
-            • Using matrices to perform transformations such as translation, scaling, and rotation of objects.<br><br>
-        </h1>
-    </div>
-</div>
+    <h2>Game & Development</h2>
+
+    <p>
+        City Slicker focuses on building momentum and speed while jumping
+        between buildings and eliminating turrets along the way.
+    </p>
+
+    <p>
+        The core goal was to make movement feel fluid, responsive and fun,
+        encouraging players to maintain speed while managing risk.
+    </p>
+
+    <p>
+        During development I encountered several issues with Unity's
+        Animator system. I eventually replaced it entirely with code-driven
+        animation triggers, which gave me more control and reliability.
+    </p>
+
+    <p>
+        This project helped deepen my understanding of object-oriented
+        programming concepts such as polymorphism, encapsulation
+        and inheritance.
+    </p>
+
+</section>
 
 
-        
-    
+
+<section class="project-section">
+
+    <h2>What I Learned</h2>
+
+    <ul>
+
+        <li>Improved understanding of OOP principles</li>
+
+        <li>Learned strengths and limitations of Unity's animation system</li>
+
+        <li>Practiced modular and reusable code architecture</li>
+
+        <li>Gained valuable solo development experience</li>
+
+    </ul>
+
+</section>
+
 
 </body>
-
-
-</html> 
+</html>

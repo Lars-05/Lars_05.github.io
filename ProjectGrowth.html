@@ -1,86 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>Project Growth | Lars Versteegen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/669a4d5e10.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-<title>Page Title</title>
-    <link rel = "stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="projectStyle.css">
 </head>
-<div class="header">
-    <!--
-    <a href="index.html" class="logo">Lars Versteegen</a>
-    -->
-    <div class="header-right">
+
+<body class="project-page">
+
+<header class="header">
+    <div class="logo">Lars Versteegen</div>
+    <nav>
         <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- Project Header -->
+<section class="profile">
+    <h1>Project Growth</h1>
+    <p>A desktop companion that helps you stay productive and complete tasks in exchange for cute rewards!</p>
+</section>
+
+<!-- Video Banner -->
+<section class="video-banner">
+    <video autoplay muted loop playsinline>
+        <source src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/CitySlickerVideo.mp4" type="video/mp4">
+    </video>
+    <div class="banner-text">
+        <h1>Project Growth</h1>
+        <p>A desktop companion that helps you stay productive and complete tasks in exchange for cute rewards!</p>
     </div>
-</div>
-<body>
+</section>
 
-
-<video autoplay loop muted playsinline width="100%">
-    <source src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/ShaderProgrammingShowOff.mp4" type="video/mp4">
-</video>
-
-
-
-
-<div class="infoBox-left">
-    <div class="textBox">
-        <h1 class="headerText"> Project Growth </h1>
-        <br><br>
-        <i class="fa-solid fa-clock icon-white"></i> &nbsp;<span class="icon-white"> 3 Weeks </span> 
-        <br><br>
-        <i class="fa-solid fa-users icon-white"></i> &nbsp;<span class="icon-white"> 6 </span>
-        <br><br>
-        <i class="fa-solid fa-code icon-white"></i> &nbsp;<span class="icon-white"> C# </span>
-        <br><br>
-        <i class="fa-solid fa-gears icon-white"></i> &nbsp;<span class="icon-white"> Unity </span>
+<!-- Project Details -->
+<section class="section alt">
+    <div class="content-wrapper">
+        <h2>Project Details</h2>
+        <div class="skills-grid">
+          
+            <div class="skill"><i class="fa-solid fa-user"></i>  Team</span>
+                <p>6 People</p>
+            </div>
+            <div class="skill">
+                <span><i class="fa-solid fa-user"></i> Role</span>
+                <p>Systems, Gameplay & AI Engineer</p>
+            </div>
+            <div class="skill">
+                <span><i class="fa-solid fa-clock"></i> Duration</span>
+                <p>3 Weeks</p>
+            </div>
+            <div class="skill">
+                <span><i class="fa-solid fa-code"></i> Language</span>
+                <p>C#</p>
+            </div>
+            <div class="skill">
+                <span><i class="fa-solid fa-gears"></i> Engine</span>
+                <p>Unity</p>
+            </div>
+          
+        </div>
     </div>
-</div>
+</section>
 
+<!-- Overview -->
+<section class="section">
+    <h2>Game Overview</h2>
+    <p>
+        Project Growth is a desktop application where you collect and grow adorable buddies using currency earned by completing tasks within a set time limit. Its goal is to reduce procrastination and motivate users to finish their work more efficiently.
+    </p>
+</section>
 
-<div class="infoBox">
-    <div class="textBox">
-        <h1 class="headerText"> Project Overview </h1>
-        <br>
-        <h1 class="normalText">
-            In this project, I scripted multiple shaders using HLSL and ShaderGraph. These ranged from more pretty shaders such as dissolve, hologram, and intersection shaders, to more technical shaders like custom lighting calculations with live normal calculation.
-
-            I also created a procedural tree generator, which builds the tree meshes and UVs algorithmically based on several parameters.
-        </h1>
+<!-- Development -->
+<section class="section alt">
+    <div class="content-wrapper">
+        <h2>Development</h2>
+        <p>
+            Project Growth is designed to be supportive without becoming a distraction. The application uses soft pastel colors to avoid overstimulation and maintain a calm visual experience. 
+            Sound effects were avoided as much as possible to prevent disrupting the user’s focus.
+            <br><br>
+            One of the biggest technical challenges was enabling the buddies to move naturally across a 2D surface. This was solved by making a plane and shaping it into the walkable area using ProBuilder, generating a NavMesh for pathfinding on it.
+        </p>
     </div>
-</div>
+</section>
 
-
-<video autoplay loop muted playsinline width="100%">
-    <source src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/TreeGeneration.mp4" type="video/mp4">
-</video>
-
-
-
-
-<div class="infoBox">
-    <div class="textBox">
-        <h1 class="headerText"> What Did I learn? </h1>
-        <br>
-        <h1 class="normalText">
-            • Manipulation of 2D textures and color data using C#, HLSL, and ShaderGraph.<br><br>
-            • Applying dot and cross products for tasks like basic lighting, calculating mesh normals and UV mapping.<br><br>
-            • Understanding 3D meshes, including geometry, normals, and UV generation.<br><br>
-            • Scripting vertex and fragment shaders with Unity URP, HLSL, and ShaderGraph.<br><br>
-            • Knowledge of coordinate spaces and transforming between them using matrices and vector bases.<br><br>
-            • Using matrices to perform transformations such as translation, scaling, and rotation of objects.<br><br>
-        </h1>
-    </div>
-</div>
-
-
-        
-    
+<!-- Learning -->
+<section class="section">
+    <h2>What I Learned</h2>
+    <ul>
+        <li>Gained experience with NavMesh systems, including implementing them in a 2D environment</li>
+        <li>Learned how to develop a desktop application using unity</li>
+    </ul>
+</section>
 
 </body>
-
-
-</html> 
+</html>

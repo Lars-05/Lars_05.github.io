@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Procedural Art | Lars Versteegen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/669a4d5e10.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="projectStyle.css">
+</head>
+
+<body class="project-page">
+<header class="header">
+    <div class="logo">Lars Versteegen</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- Project Header -->
+<section class="profile">
+    <h1>Procedural Art</h1>
+    <p>Creating procedural materials and a small sci-fi diorama using Substance Designer</p>
+</section>
+
+<!-- Video Banner -->
+<section class="video-banner">
+    
+    
+    <video autoplay muted loop playsinline>
+        <source src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/CitySlickerVideo.mp4" type="video/mp4">
+    </video>
+    
+    <div class="banner-text">
+        <h1>Procedural Art</h1>
+        <p>4 sci-fi materials made with Substance Designer</p>
+    </div>
+</section>
+
+<!-- Project Details -->
+<section class="section alt">
+    <div class="content-wrapper">
+        <h2>Project Details</h2>
+        <div class="skills-grid">
+            <div class="skill">
+                <span><i class="fa-solid fa-user"></i> Team</span>
+                <p>Solo</p>
+            </div>
+            <div class="skill">
+                <span><i class="fa-solid fa-clock"></i> Duration</span>
+                <p>6 Weeks</p>
+            </div>
+            <div class="skill">
+                <span><i class="fa-solid fa-code"></i> Software</span>
+                <p>Substance 3D Designer, Unity HDRP</p>
+            </div>
+            <div class="skill">
+                <span><i class="fa-solid fa-gears"></i> Engine</span>
+                <p>Unity 6 (HDRP)</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Project Overview -->
+<section class="section">
+    <h2>Project Overview</h2>
+    <p>
+        For this project, I learned how to use Substance Designer by creating four separate procedural materials based on a sci-fi theme.
+        These materials were implemented in a Unity HDRP scene, each with at least five exposed parameters to allow real-time customization.
+        <br><br>
+        As part of the assignment, I also created several high-resolution beauty renders to showcase the materials in detail.
+    </p>
+</section>
+
+<!-- Development -->
+<section class="section alt">
+    <div class="content-wrapper">
+        <h2>Development</h2>
+        <p>
+            The development process started with gathering references and creating rough prototypes in Substance Designer.
+            I began by blocking out the main shapes using the height map, then moved smaller details into the normal map to optimize performance.
+            <br><br>
+            Ambient occlusion was generated from the height and normal data to add depth. Wear and tear were first created in grayscale
+            before applying color, allowing better control over intensity.
+            <br><br>
+            Each material includes at least five exposed parameters, mostly affecting shape and color, making them highly adjustable in real time.
+            <br><br>
+            Afterward, the materials were imported into Unity and placed in a circular floating diorama. I used HDRP lighting,
+            post-processing, and Polybrush to blend materials naturally.
+            <br><br>
+            One of the main challenges was balancing visual quality with flexibility, as well as ensuring all materials worked well together
+            through lighting and composition.
+        </p>
+    </div>
+</section>
+
+<!-- Learning -->
+<section class="section">
+    <h2>What I Learned</h2>
+    <ul>
+        <li>How to create procedural materials using Substance 3D Designer</li>
+        <li>How to use exposed parameters for real-time customization</li>
+        <li>Improved workflow in Unity HDRP (lighting and post-processing)</li>
+        <li>How to blend materials using Polybrush</li>
+        <li>Better understanding of non-destructive workflows</li>
+    </ul>
+</section>
+
+</body>
+</html>

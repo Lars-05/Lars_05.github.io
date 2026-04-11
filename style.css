@@ -81,19 +81,15 @@ body {
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
 }
 
-.project-card video.card-video {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    display: block;
-    pointer-events: none;
-}
-
+.project-card video.card-video,
 .project-card img {
     width: 100%;
     height: 160px;
     object-fit: cover;
     display: block;
+}
+
+.project-card img {
     border-radius: 12px 12px 0 0;
 }
 
@@ -113,7 +109,7 @@ body {
     color: #d0d0d0;
 }
 
-/* Responsive */
+/* Responsive Projects */
 @media (max-width: 768px) {
     .projects {
         flex-direction: column;
@@ -138,7 +134,7 @@ body {
     color: #fff;
 }
 
-/* Grid layout for 2 rows */
+/* Skills Grid */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -307,6 +303,7 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 }
 
+/* Left arrow */
 .timeline-item.left .content::after {
     content: '';
     position: absolute;
@@ -321,9 +318,7 @@ body {
     margin-left: 20px;
 }
 
-.timeline-item.right .content {
-    margin-right: 20px; 
-
+/* Right arrow */
 .timeline-item.right .content::after {
     content: '';
     position: absolute;
@@ -332,6 +327,10 @@ body {
     border-width: 10px;
     border-style: solid;
     border-color: transparent #1e1e1e transparent transparent;
+}
+
+.timeline-item.right .content {
+    margin-right: 20px;
 }
 
 /* Responsive Timeline */
@@ -347,7 +346,8 @@ body {
         left: 0;
     }
 
-    .timeline-item.left .content::after, .timeline-item.right .content::after {
+    .timeline-item.left .content::after,
+    .timeline-item.right .content::after {
         left: 60px;
         border-color: transparent #1e1e1e transparent transparent;
     }
@@ -355,4 +355,18 @@ body {
     .timeline-container::after {
         left: 60px;
     }
+}
+
+/* Video Banner */
+.video-banner {
+    width: 100vw;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

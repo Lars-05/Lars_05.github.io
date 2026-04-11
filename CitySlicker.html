@@ -1,87 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>City Slicker | Lars Versteegen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/669a4d5e10.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-<title>Page Title</title>
-    <link rel = "stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="projectStyle.css">
 </head>
-<div class="header">
-    <!--
-    <a href="index.html" class="logo">Lars Versteegen</a>
-    -->
-    <div class="header-right">
+
+<body class="project-page">
+
+<header class="header">
+    <div class="logo">Lars Versteegen</div>
+    <nav>
         <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- Project Header -->
+<section class="profile">
+    <h1>City Slicker</h1>
+    <p>Fast-paced movement FPS focused on speed and flow.</p>
+</section>
+
+<!-- Video Banner -->
+<section class="video-banner">
+    <video autoplay muted loop playsinline>
+        <source src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/CitySlickerVideo.mp4" type="video/mp4">
+    </video>
+    <div class="banner-text">
+        <h1>City Slicker</h1>
+        <p>Fast-paced movement FPS focused on speed and flow.</p>
     </div>
-</div>
-<body>
+</section>
 
-<video autoplay loop muted playsinline width="100%">
-    <source src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/CitySlickerVideo.mp4" type="video/mp4">
-</video>
-
-
-
-<div class="infoBox-left">
-    <div class="textBox">
-        <h1 class="headerText"> City Slicker </h1>
-        <br><br>
-        <i class="fa-solid fa-clock icon-white"></i> &nbsp;<span class="icon-white"> 5 Weeks </span> 
-        <br><br>
-        <i class="fa-solid fa-users icon-white"></i> &nbsp;<span class="icon-white"> 1 </span>
-        <br><br>
-        <i class="fa-solid fa-code icon-white"></i> &nbsp;<span class="icon-white"> C# </span>
-        <br><br>
-        <i class="fa-solid fa-gears icon-white"></i> &nbsp;<span class="icon-white"> Unity </span>
+<!-- Project Details -->
+<section class="section alt">
+    <div class="content-wrapper">
+        <h2>Project Details</h2>
+        <div class="skills-grid">
+            <div class="skill">
+                <span><i class="fa-solid fa-clock"></i> Duration</span>
+                <p>5 Weeks</p>
+            </div>
+            <div class="skill">
+                <span><i class="fa-solid fa-user"></i> Team</span>
+                <p>Solo</p>
+            </div>
+            <div class="skill">
+                <span><i class="fa-solid fa-code"></i> Language</span>
+                <p>C#</p>
+            </div>
+            <div class="skill">
+                <span><i class="fa-solid fa-gears"></i> Engine</span>
+                <p>Unity</p>
+            </div>
+        </div>
     </div>
-</div>
+</section>
 
+<!-- Overview -->
+<section class="section">
+    <h2>Game Overview</h2>
+    <p>
+        City Slicker is a fast-paced movement-based first-person shooter developed
+        completely solo in Unity using C#. The game was created over five weeks
+        with the goal of experimenting with responsive and high-speed traversal.
+    </p>
+    <p>
+        All gameplay systems, mechanics, and assets were built from scratch
+        without external packages or libraries.
+    </p>
+</section>
 
-<div class="infoBox">
-    <div class="textBox">
-        <h1 class="headerText"> Game Overview </h1>
-        <br>
-        <h1 class="normalText">
-            City Slicker is a fast-paced, movement-based first-person shooter that I developed completely on my 
-            own over the course of five weeks using Unity and C#. 
-            The game uses no external libraries, packages, or assets, 
-            everything from the mechanics to the visuals was built from scratch.
-        </h1>
+<!-- Development -->
+<section class="section alt">
+    <div class="content-wrapper">
+        <h2>Development</h2>
+        <p>
+            City Slicker focuses on building up speed to jump from building to
+            building while eliminating turrets and avoiding traps.
+        </p>
+        <p>
+            The goal was to create a movement system that feels fluid, fast,
+            and satisfying to master while still rewarding risk-taking.
+        </p>
+        <p>
+            During development I ran into several limitations with Unity’s
+            Animator system. I eventually replaced it entirely with code-driven
+            animation triggers, giving me more control and reliability.
+        </p>
+        <p>
+            The project also helped deepen my understanding of object-oriented
+            programming concepts such as polymorphism, encapsulation,
+            and inheritance.
+        </p>
     </div>
-</div>
+</section>
 
-<div class="infoBox">
-    <div class="textBox">
-        <h1 class="headerText"> Game & Development </h1>
-        <br>
-        <h1 class="normalText">
-            City Slicker is a movement based fps where the player needs to build up speed to jump from building to building while eliminating dangerous turrets and avoiding traps. My focus was to make the movement feel fast, fluid, reliable and fun! Making the player eager to maintain a high speed despite its risks.
-            The development of this game taught me a lot about the basics of OOP, for example: polymorphism, Encapsulation, and inheritance. The development also taught me about the importance of modular and easily reusable code.
-            During development, I ran into several issues with Unity’s built-in Animator system. After a lot of trial and error, I decided to drop it entirely and trigger animations manually through code. This ended up being much more reliable and gave me more control.
-        </h1>
-    </div>
-</div>
-
-<div class="infoBox">
-    <div class="textBox">
-        <h1 class="headerText"> What Did I learn? </h1>
-        <br>
-        <h1 class="normalText">
-            •	Improved my understanding of OOP concepts like polymorphism, Encapsulation, and inheritance.<br><br>
-            •	Learned the do, don’ts and limits of Unity animation system. <br><br>
-            •	Learned how and when to write modular and easily reusable code. <br><br>
-            •	Gained a lot of solo dev experience, from making the assets to bringing them to life in unity.
-        </h1>
-    </div>
-</div>
-
-
-        
-    
+<!-- Learning -->
+<section class="section">
+    <h2>What I Learned</h2>
+    <ul>
+        <li>Improved understanding of core OOP concepts</li>
+        <li>Learned the strengths and limitations of Unity’s animation system</li>
+        <li>Developed modular and reusable code structures</li>
+        <li>Gained experience building a complete project solo</li>
+    </ul>
+</section>
 
 </body>
-
-
-</html> 
+</html>

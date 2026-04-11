@@ -1,0 +1,200 @@
+/* ---------------------------------
+   Reset & Base
+----------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    background: #131313;
+    color: white;
+    line-height: 1.6;
+}
+
+/* ---------------------------------
+   Header
+----------------------------------- */
+.header {
+    position: sticky;
+    top: 0;
+    background: #1b1b23;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    z-index: 100;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+    transition: opacity 0.2s ease;
+}
+
+.header a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ---------------------------------
+   Video Banner
+----------------------------------- */
+.project-page .video-banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.project-page .video-banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.project-page .video-banner .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.project-page .video-banner .banner-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.project-page .video-banner .banner-text p {
+    font-size: 1.2rem;
+}
+
+/* ---------------------------------
+   Profile Header
+----------------------------------- */
+.project-page .profile {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.project-page .profile h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.project-page .profile p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    color: #d0d0d0;
+}
+
+/* ---------------------------------
+   Sections
+----------------------------------- */
+.project-page .section {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.project-page .section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* ---------------------------------
+   Centered gray sections
+----------------------------------- */
+.project-page .section.alt {
+    background-color: #1a1a1a;
+    max-width: 900px;       /* limit the width */
+    margin: 0 auto 60px;    /* center it and add bottom margin */
+    padding: 40px 20px;     /* padding inside the bar */
+    border-radius: 12px;    /* optional: rounded edges */
+}
+
+.project-page .section.alt .content-wrapper {
+    padding: 0;             /* remove inner padding */
+    text-align: left;       /* left-align text */
+}
+
+/* ---------------------------------
+   Skills Grid
+----------------------------------- */
+.project-page .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.project-page .skills-grid .skill {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.project-page .skills-grid .skill span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.project-page .skills-grid .skill p {
+    font-size: 0.95rem;
+    color: #d0d0d0;
+}
+
+/* ---------------------------------
+   Lists
+----------------------------------- */
+.project-page .section ul {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 20px;
+    text-align: left;
+    color: #d0d0d0;
+}
+
+.project-page .section ul li {
+    margin-bottom: 10px;
+}
+
+/* ---------------------------------
+   Responsive
+----------------------------------- */
+@media screen and (max-width: 768px) {
+
+    .project-page .video-banner {
+        height: 250px;
+    }
+
+    .project-page .video-banner .banner-text h1 {
+        font-size: 2rem;
+    }
+
+    .project-page .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-page .section.alt {
+        max-width: 95%;       /* make gray bar almost full width on mobile */
+        padding: 30px 15px;
+    }
+}
