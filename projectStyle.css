@@ -203,20 +203,28 @@ body {
 /* ---------------------------------
    Image Grid 
 ----------------------------------- */
-.project-gallery {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 0 20px;
-    text-align: center;
-}
+
 
 .image-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    max-width: 900px;
+    max-width: 2000px;
     margin: 40px auto;
 }
+
+.image {
+    max-width: 2000px;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
 
 .image-grid img {
     width: 100%;
