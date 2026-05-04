@@ -44,16 +44,77 @@ body {
     font-weight: bold;
 }
 
+
+/* ---------------------------------
+   Header Buttons
+----------------------------------- */
+
+
+.resume-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: 2px solid #307773;
+    border-radius: 25px;
+    color: #307773;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+    background-color: #307773;
+    color: white;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: 2px solid #144d56; 
+    border-radius: 25px;
+    color: #144d56;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #144d56;
+    color: white;
+}
+
+.home-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: 2px solid #144d56;
+    border-radius: 25px;
+    color: #144d56;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #144d56; 
+    color: white;
+}
+
+
+
 /* ---------------------------------
    Video Banner
 ----------------------------------- */
-.project-page .video-banner {
+
+.project-page .video-banner.  {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 800px;
     overflow: hidden;
     margin-bottom: 60px;
 }
+
 
 .project-page .video-banner video {
     width: 100%;
@@ -78,6 +139,44 @@ body {
 }
 
 .project-page .video-banner .banner-text p {
+    font-size: 1.2rem;
+}
+
+.project-page .fixed-video-banner {
+    position: relative;
+    width:  70%;
+    height:  70%;
+    overflow: hidden;
+    margin: 0 auto 60px auto; 
+    border-radius: 20px;
+}
+
+.project-page .fixed-video-banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    display: block;
+}
+
+.project-page .fixed-video-banner .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+    z-index: 2; 
+}
+
+
+.project-page .fixed-video-banner .banner-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.project-page .fixed-video-banner .banner-text p {
     font-size: 1.2rem;
 }
 
@@ -182,7 +281,21 @@ body {
 @media screen and (max-width: 768px) {
 
     .project-page .video-banner {
-        height: 250px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto 60px;
+
+        aspect-ratio: 16 / 6;
+        height: auto;
+
+        position: relative;
+        overflow: hidden;
+    }
+
+    .project-page .video-banner video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .project-page .video-banner .banner-text h1 {
@@ -194,7 +307,7 @@ body {
     }
 
     .project-page .section.alt {
-        max-width: 95%;     
+        max-width: 95%;
         padding: 30px 15px;
     }
 }
@@ -204,6 +317,106 @@ body {
    Image Grid 
 ----------------------------------- */
 
+/* ---------------------------------
+   Contact Page Layout
+----------------------------------- */
+
+.contact-page {
+    background: #131313;
+}
+
+    .contact-page .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        padding: 100px 20px;
+        flex-wrap: wrap;
+    }
+
+    .contact-page .profile-picture {
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #307773;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .contact-page .hero-text {
+        max-width: 500px;
+        text-align: left;
+    }
+
+        .contact-page .hero-text h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-page .hero-text p {
+            color: #d0d0d0;
+            font-size: 1.1rem;
+        }
+
+
+    .contact-page .section {
+        max-width: 900px;
+        margin: 0 auto 60px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+        .contact-page .section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+
+    .contact-page .contact-card {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 18px 22px;
+        background: #1a1a1a;
+        border: 1px solid #2a2a2a;
+        border-radius: 12px;
+        transition: 0.25s ease;
+        margin-top: 10px;
+    }
+
+        .contact-page .contact-card:hover {
+            transform: translateY(-3px);
+            border-color: #307773;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .contact-page .contact-card i {
+            color: #307773;
+            font-size: 1.2rem;
+        }
+
+        .contact-page .contact-card a {
+            color: #4ea1ff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+            .contact-page .contact-card a:hover {
+                text-decoration: underline;
+            }
+
+
+@media screen and (max-width: 768px) {
+    .contact-page .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .contact-page .hero-text {
+        text-align: center;
+    }
+}
 
 .image-grid {
     display: grid;

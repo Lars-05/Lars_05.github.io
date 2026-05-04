@@ -1,76 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>Contact | Lars Versteegen</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/669a4d5e10.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Page Title</title>
-    <link rel = "stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<div class="header">
-    <!--
-    <a href="index.html" class="logo">Lars Versteegen</a>
-    -->
-    <div class="header-right">
-        <a class="active" href="index.html">Home</a>
-        <a class="active" href="contact.html">Contact</a>
-    </div>
-</div>
-<body>
 
-<div class="infoBox">
+<body class="contact-page">
+
+
+<header class="header">
+    <div class="logo"><a href="index.html">Lars Versteegen</a></div>
+
+        
+        <nav>
+            <a href="index.html" class="home-btn">Home</a>
+            <a href="contact.html" class="contact-btn">Contact</a>
+            <a href="Docs/CV.PDF"  class="resume-btn" target="_blank">Resume</a>
+        </nav>
+</header>
+
+
+<section class="hero">
     <img class="profile-picture"
          src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/ProfilePicture.png"
-         width="300" height="300">
+         alt="Profile Picture">
 
-
-    <div class="textBox">
-        <h1 class="headerText"> Lars Versteegen </h1>
-        <br>
-        <h1 class="normalText">
-            
-        </h1>
+    <div class="hero-text">
+        <h1>Lars Versteegen</h1>
+        <p>Second-Year Game & Graphics Engineer and 3D Artist student at
+            Creative Media and Game Technologies (CMGT),
+            Saxion University of Applied Sciences.</p>
     </div>
-</div>
+</section>
 
-<div class="infoBox">
-    <div class="textBox">
-        <h1 class="headerText">Contact </h1>
-        
-        <h1 class="normalText">
-            <div class="infoBox">
-                <div class="textBox">
-                    <i class="fa-solid fa-envelope"></i> &nbsp;<span class="icon-white"> <a href="mailto:lars.versteegen6@gmail.com">Send email</a> </span>
-                </div>
-            </div>
-        </h1>
+
+<section class="section">
+    <h2>Contact Me!</h2>
+
+    <div class="contact-links">
+
+        <!-- Email -->
+        <div class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:lars.versteegen6@gmail.com">
+                Email Me!
+            </a>
+        </div>
+
+        <!-- GitHub -->
+        <div class="contact-card">
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/Lars-05" target="_blank">
+                Github
+            </a>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="contact-card">
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/lars-versteegen-3351b0331/" target="_blank">
+                LinkedIn
+            </a>
+        </div>
+
     </div>
-</div>
-
-
-
-<div class="infoBox-row-container">
-  
-</div>
-
-
-
-
-
-
-<div class="infoBox-row-container">
-
-</div>
-
-
-
-
-
-
-
+</section>
 
 </body>
-
-
-</html> 
+</html>

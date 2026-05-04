@@ -1,91 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>Dungeon Generator | Lars Versteegen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/669a4d5e10.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-<title>Page Title</title>
-    <link rel = "stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="projectStyle.css">
 </head>
-<div class="header">
-    <!--
-    <a href="index.html" class="logo">Lars Versteegen</a>
-    -->
-    <div class="header-right">
-        <a href="index.html">Home</a>
-    </div>
-</div>
-<body>
 
+<body class="project-page">
 
-<video autoplay loop muted playsinline width="100%">
-    <source src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/DungeonGenerator.mp4" type="video/mp4">
-</video>
-
-
-
-
-<div class="infoBox-left">
-    <div class="textBox">
-        <h1 class="headerText"> Dungeon Generator </h1>
-        <br><br>
-        <i class="fa-solid fa-clock icon-white"></i> &nbsp;<span class="icon-white"> 5 Weeks </span> 
-        <br><br>
-        <i class="fa-solid fa-users icon-white"></i> &nbsp;<span class="icon-white"> 1 </span>
-        <br><br>
-        <i class="fa-solid fa-code icon-white"></i> &nbsp;<span class="icon-white"> C# </span>
-        <br><br>
-        <i class="fa-solid fa-gears icon-white"></i> &nbsp;<span class="icon-white"> Unity </span>
-    </div>
-</div>
-
-<video autoplay loop muted playsinline width="100%">
-    <source src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/DungeonMovement.mp4" type="video/mp4">
-</video>
-
-<div class="infoBox">
-    <div class="textBox">
-        <h1 class="headerText"> Project Overview </h1>
-        <br>
-        <h1 class="normalText">
-            For this project I had to script a dungeon generator that worked with any width or height, it also had to come with a player that could navigate through the dungeon using a pathfinding algorithm. The dungeon generator has the following features:
-            <br><br>
-            • The dungeon will never loop<br><br>
-            • Assets are placed using marching squares and flood fill, allowing corner pieces<br><br>
-            • Assets can be easily swapped out<br><br>
-            • Player movement supports A*, Dijkstra, and NavMesh, with visual comparisons between algorithms<br><br>
-            • The entire dungeon generation process can be visualized with gizmos, making debugging easier
-
-        </h1>
-    </div>
-</div>
-
-<div class="infoBox">
-    <div class="textBox">
-        <h1 class="headerText"> What Did I learn? </h1>
-        <br>
-        <h1 class="normalText">
-            • What algorithms are and how to describe them using pseudocode and flowcharts<br><br>
-            • Advanced debugging techniques beyond using Debug.Log<br><br>
-            • Understanding HashSets, Queues, and Dictionaries and when to use them<br><br>
-            • A* and Dijkstra: how they work and how to implement them<br><br>
-            • BFS, DFS, Flood Fill, and Marching Squares: how they work and how to implement them<br><br>
-            • What Big O notation is and how to apply it to an algorithm<br><br>
-            • How to implement algorithms both iteratively and recursively
-
-
-
-
-        </h1>
-    </div>
-</div>
-
-
-        
+<header class="header">
+    <div class="logo"><a href="index.html">Lars Versteegen</a></div>
     
+    <nav>
+        <a href="index.html" class="home-btn">Home</a>
+        <a href="contact.html" class="contact-btn">Contact</a>
+        <a href="Docs/CV.PDF" class="resume-btn" target="_blank">Resume</a>
+    </nav>
+</header>
+
+<!-- Video Banner -->
+<section class="video-banner">
+    <video autoplay muted loop playsinline>
+        <source src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/DungeonGenerator.mp4" type="video/mp4">
+    </video>
+
+    <div class="banner-text">
+        <h1>Dungeon Generator</h1>
+        <p>Procedural dungeon generation system with multiple pathfinding algorithms</p>
+    </div>
+</section>
+
+<!-- Project Details -->
+<section class="section alt">
+    <div class="content-wrapper">
+        <h2>Project Details</h2>
+
+        <div class="skills-grid">
+            <div class="skill">
+                <span><i class="fa-solid fa-clock"></i> Duration</span>
+                <p>5 Weeks</p>
+            </div>
+
+            <div class="skill">
+                <span><i class="fa-solid fa-user"></i> Team</span>
+                <p>Solo</p>
+            </div>
+
+            <div class="skill">
+                <span><i class="fa-solid fa-code"></i> Language</span>
+                <p>C#</p>
+            </div>
+
+            <div class="skill">
+                <span><i class="fa-solid fa-gears"></i> Engine</span>
+                <p>Unity</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Overview -->
+<section class="section">
+    <h2>Project Overview</h2>
+
+    <p>
+        For this project, I built a procedural dungeon generation system that can handle any width or height. I also made sure the layout doesn’t create loops, so there’s always one clear path through the dungeon.<br><br>
+
+        I added a player system that can move through the dungeon using different pathfinding methods like A*, Dijkstra, and Unity’s NavMesh, so I could compare how each one behaves.<br><br>
+
+        For tile placement, I used Marching Squares and Flood Fill. This helped make the corners look smoother and made it easier to swap out different tile assets.<br><br>
+
+        I also used Unity Gizmos a lot to visualize what was happening during generation, which made it much easier to debug and improve the system step by step.
+    </p>
+</section>
+
+<!-- Development -->
+<section class="section alt">
+    <div class="content-wrapper">
+        <h2>Development</h2>
+
+        <p>
+            I started by working on the dungeon generation system and made sure it didn’t create loops, so there was always a clear and valid path through the dungeon.<br><br>
+
+            After that, I implemented some core algorithms like Breadth-First Search (BFS), Depth-First Search (DFS), and Flood Fill to help control how the dungeon gets generated.<br><br>
+
+            I also used Marching Squares to figure out how tiles should connect visually, which made the asset system more flexible and modular.<br><br>
+
+            Finally, I worked on pathfinding by implementing A* and Dijkstra’s algorithm, and compared how they performed in different types of dungeon layouts.<br><br>
+
+            Throughout the whole process, I used gizmos a lot to visualize what was happening and to help debug the generation in real time.
+        </p>
+    </div>
+</section>
+
+<!-- Video -->
+<section class="section">
+    <div class="content-wrapper">
+        <video autoplay loop muted playsinline style="width:100%; border-radius:12px;">
+            <source src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/DungeonMovement.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<!-- Learning -->
+<section class="section">
+    <h2>What I Learned</h2>
+
+    <ul>
+        <li>How procedural generation algorithms work in practice</li>
+        <li>Better debugging techniques using visualization tools</li>
+        <li>When to use HashSets, Queues, and Dictionaries efficiently</li>
+        <li>How A* and Dijkstra pathfinding algorithms function internally</li>
+        <li>BFS, DFS, Flood Fill, and Marching Squares systems</li>
+        <li>Big O notation and performance considerations</li>
+        <li>Iterative vs recursive algorithm design</li>
+    </ul>
+</section>
 
 </body>
-
-
-</html> 
+</html>

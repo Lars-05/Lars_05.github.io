@@ -1,137 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shader Programming | Lars Versteegen</title>
 
-    <title>City Slicker | Lars Versteegen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/669a4d5e10.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="projectStyle.css">
 </head>
-
 
 <body class="project-page">
 
-
 <header class="header">
-
-    <div class="logo">Lars Versteegen</div>
-
+    <div class="logo"><a href="index.html">Lars Versteegen</a></div>
     <nav>
-        <a href="index.html">Home</a>
+        <a href="index.html" class="home-btn">Home</a>
+        <a href="contact.html" class="contact-btn">Contact</a>
+        <a href="Docs/CV.PDF" class="resume-btn" target="_blank">Resume</a>
     </nav>
-
 </header>
 
-
-<a href="index.html" class="back-button">
-    <i class="fa-solid fa-arrow-left"></i>
-</a>
-
-
-<section class="project-hero">
-
+<!-- Video Banner -->
+<section class="video-banner">
     <video autoplay muted loop playsinline>
-        <source src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/CitySlickerVideo.mp4" type="video/mp4">
+        <source src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/ShaderProgrammingShowOff.mp4" type="video/mp4">
     </video>
 
-    <div class="hero-overlay">
-
-        <h1>City Slicker</h1>
-
-        <p class="tagline">
-            Fast-paced movement FPS focused on speed and flow
-        </p>
-
-        <div class="project-meta">
-
-            <span><i class="fa-solid fa-clock"></i> 5 Weeks</span>
-            <span><i class="fa-solid fa-user"></i> Solo</span>
-            <span><i class="fa-solid fa-code"></i> C#</span>
-            <span><i class="fa-solid fa-gears"></i> Unity</span>
-
-        </div>
-
+    <div class="banner-text">
+        <h1>Shader Programming</h1>
+        <p>Custom shaders, visual effects, and procedural rendering systems in Unity</p>
     </div>
-
 </section>
 
+<!-- Project Details -->
+<section class="section alt">
+    <div class="content-wrapper">
+        <h2>Project Details</h2>
 
+        <div class="skills-grid">
+            <div class="skill">
+                <span><i class="fa-solid fa-clock"></i> Duration</span>
+                <p>7 Weeks</p>
+            </div>
 
-<section class="project-section">
+            <div class="skill">
+                <span><i class="fa-solid fa-user"></i> Team</span>
+                <p>Solo</p>
+            </div>
 
-    <h2>Game Overview</h2>
+            <div class="skill">
+                <span><i class="fa-solid fa-code"></i> Languages</span>
+                <p>C# & HLSL</p>
+            </div>
 
-    <p>
-        City Slicker is a fast-paced movement-based first-person shooter
-        developed completely solo in Unity using C#. The game was created
-        over five weeks with the goal of experimenting with responsive
-        high-speed traversal mechanics.
-    </p>
-
-    <p>
-        All gameplay systems, mechanics and assets were created from
-        scratch without external libraries or packages.
-    </p>
-
+            <div class="skill">
+                <span><i class="fa-solid fa-gears"></i> Engine</span>
+                <p>Unity</p>
+            </div>
+        </div>
+    </div>
 </section>
 
-
-
-<section class="project-section alt">
-
-    <h2>Game & Development</h2>
+<!-- Overview -->
+<section class="section">
+    <h2>Project Overview</h2>
 
     <p>
-        City Slicker focuses on building momentum and speed while jumping
-        between buildings and eliminating turrets along the way.
-    </p>
+        In this project, I developed multiple custom shaders using HLSL and Shader Graph in Unity.<br><br>
 
-    <p>
-        The core goal was to make movement feel fluid, responsive and fun,
-        encouraging players to maintain speed while managing risk.
-    </p>
+        These included visual effects such as dissolve, hologram, and intersection shaders, as well as more technical shaders involving custom lighting calculations and real-time normal manipulation.<br><br>
 
-    <p>
-        During development I encountered several issues with Unity's
-        Animator system. I eventually replaced it entirely with code-driven
-        animation triggers, which gave me more control and reliability.
+        I also built a procedural tree generation system that dynamically constructs meshes and UVs based on adjustable parameters, allowing flexible and scalable tree creation directly in-engine.
     </p>
-
-    <p>
-        This project helped deepen my understanding of object-oriented
-        programming concepts such as polymorphism, encapsulation
-        and inheritance.
-    </p>
-
 </section>
 
+<!-- Video -->
+<section class="section">
+    <div class="content-wrapper">
+        <video autoplay loop muted playsinline style="width:100%; border-radius:12px;">
+            <source src="https://github.com/Lars-05/Lars_05.github.io/raw/main/Images/TreeGeneration.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
 
+<!-- Development -->
+<section class="section alt">
+    <div class="content-wrapper">
+        <h2>Development</h2>
 
-<section class="project-section">
+        <p>
+            I started by exploring Unity’s Shader Graph and gradually moved into writing custom HLSL shaders for more control over rendering behavior.<br><br>
 
+            From there, I implemented multiple visual effects such as dissolve transitions, holographic distortion, and surface intersection effects.<br><br>
+
+            I also worked on custom lighting models, using vector math (dot and cross products) to calculate normals and simulate more physically accurate shading.<br><br>
+
+            Finally, I built a procedural tree system that generates geometry, assigns UVs, and adapts its shape based on parameters like height, branching, and randomness.
+        </p>
+    </div>
+</section>
+
+<!-- Learning -->
+<section class="section">
     <h2>What I Learned</h2>
 
     <ul>
-
-        <li>Improved understanding of OOP principles</li>
-
-        <li>Learned strengths and limitations of Unity's animation system</li>
-
-        <li>Practiced modular and reusable code architecture</li>
-
-        <li>Gained valuable solo development experience</li>
-
+        <li>How to write custom shaders using HLSL</li>
+        <li>Using Shader Graph for rapid visual prototyping</li>
+        <li>Manipulating textures and color data in real time</li>
+        <li>Understanding normals, UVs, and mesh construction</li>
+        <li>Using dot and cross products for lighting calculations</li>
+        <li>Working with coordinate spaces and transformation matrices</li>
+        <li>Procedural mesh generation techniques in Unity</li>
     </ul>
-
 </section>
-
 
 </body>
 </html>
